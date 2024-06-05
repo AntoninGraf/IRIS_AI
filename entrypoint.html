@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <script src="config.js"></script>
+    <script>
+        function goToForum() {
+            // Changer la variable pageToShow en 'forum'
+            setPageToShow('forum');
+            // Rediriger vers la page forum.html
+            window.location.href = 'forum.html';
+        }
+    </script>
+</head>
+<body>
+    <h1>Introduction</h1>
+    <button onclick="goToForum()">Aller au forum</button>
+</body>
+</html>
