@@ -1,0 +1,38 @@
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+header {
+    background-color: #00f;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.main-content {
+    padding: 50px;
+}
+
+button {
+    background-color: #0f0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0a0;
+}
+
+footer {
+    background-color: #222;
+    padding: 20px;
+}
