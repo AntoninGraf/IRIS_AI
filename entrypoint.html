@@ -8,7 +8,7 @@
     <script>
         function goToForum() {
             // Changer la variable pageToShow en 'forum'
-            setPageToShow('forum');
+            localStorage.setItem('pageToShow', 'forum');
             // Rediriger vers la page forum.html
             window.location.href = 'forum.html';
         }

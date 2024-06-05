@@ -7,13 +7,21 @@
     <script src="config.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            if (pageToShow === "entrypoint") {
-                window.location.href = "entrypoint.html";
-            } else if (pageToShow === "forum") {
+            if(document.getElementById('pageToShowValue').innerText==="forum")
+            {
                 window.location.href = "forum.html";
-            } else {
-                console.error("Unknown pageToShow value:", pageToShow);
             }
+            else
+            {
+                window.location.href = "entrypoint.html";
+            }
+            // if (pageToShow === "entrypoint") {
+            //     window.location.href = "entrypoint.html";
+            // } else if (pageToShow === "forum") {
+            //     window.location.href = "forum.html";
+            // } else {
+            //     console.error("Unknown pageToShow value:", pageToShow);
+            // }
         });
     </script>
 </head>
