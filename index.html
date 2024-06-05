@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello, World!</title>
+    <title>IRIS_AI</title>
     <script src="config.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            if(document.getElementById('pageToShowValue').innerText==="forum")
+            var page = localStorage.getItem('pageToShow');
+            if(package==="forum")
             {
                 window.location.href = "forum.html";
             }
