@@ -9,6 +9,14 @@
         function goToForum() {
             // Changer la variable pageToShow en 'forum'
             localStorage.setItem('pageToShow', 'forum');
+
+            //setup le temps d'expiration
+            var endTime = new Date().getTime() + 1000 * 60 * 60 * 24;
+            endTime += 1000 * 60 * 60;
+
+            localStorage.setItem('endTime', endTime);
+
+
             // Rediriger vers la page forum.html
             window.location.href = 'forum.html';
         }

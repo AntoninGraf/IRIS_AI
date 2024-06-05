@@ -6,6 +6,31 @@
     <title>Hello World</title>
 </head>
 <body>
+    <div id="countdown"></div>
+    <script>
+        // Date limite
+        var newEndTime = localStorage.getItem('endTime')
+        
+        function updateCountdown() {
+            // Temps restant en millisecondes
+            var timeLeft = newEndTime - new Date().getTime();
+            
+            // Calcul du temps restant
+            var hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+            
+            // Affichage du temps restant
+            var countdownElement = document.getElementById("countdown");
+            countdownElement.innerHTML = "Temps restant : " + hours + ":" + minutes + ":" + seconds;
+            
+            // Mise à jour toutes les secondes
+            setTimeout(updateCountdown, 1000);
+        }
+        
+        // Lancer la mise à jour initiale
+        updateCountdown();
+    </script>
     <h1>forum</h1>
 </body>
 </html>
